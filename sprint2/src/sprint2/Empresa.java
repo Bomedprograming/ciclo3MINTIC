@@ -11,10 +11,10 @@ package sprint2;
 public class Empresa {
     private String nombreEmpresa;
     private String direccion;
-    private int telefono;
-    private int nit;
+    private String telefono;
+    private String nit;
 
-    public Empresa(String nombreEmpresa, String direccion, int telefono, int nit) {
+    public Empresa(String nombreEmpresa, String direccion, String telefono, String nit) {
         this.nombreEmpresa = nombreEmpresa;
         this.direccion = direccion;
         this.telefono = telefono;
@@ -37,19 +37,19 @@ public class Empresa {
         this.direccion = direccion;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
-    public int getNit() {
+    public String getNit() {
         return nit;
     }
 
-    public void setNit(int nit) {
+    public void setNit(String nit) {
         this.nit = nit;
     }
     

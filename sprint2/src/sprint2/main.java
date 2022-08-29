@@ -15,13 +15,13 @@ public class main {
         
         //EMPRESA
         System.out.println("Digite el nombre de la empresa: ");
-        String nombreEmpresa = sc.next();
+        String nombreEmpresa = sc.nextLine();
         System.out.println("Digite dirección de la empresa: ");
-        String direccion = sc.next();
+        String direccion = sc.nextLine();
         System.out.println("Digite el teléfono de la empresa: ");
-        int telefono = sc.nextInt();
+        String telefono = sc.nextLine();
         System.out.println("Digite el NIT de la empresa: ");
-        int nit = sc.nextInt();
+        String nit = sc.nextLine();
         Empresa empresa1 = new Empresa(nombreEmpresa, direccion, telefono, nit) ;
         System.out.println("La empresa numero 1 es: " + empresa1.getNombreEmpresa());
         System.out.println("La dirección de la empresa numero 1 es: " + empresa1.getDireccion());
@@ -31,13 +31,13 @@ public class main {
         
         //EMPLEADO
          System.out.println("Digite el nombre del empleado: ");
-        String nombreEmpleado = sc.next();
+        String nombreEmpleado = sc.nextLine();
         System.out.println("Digite el correo del empleado: ");
-        String Correo = sc.next();
+        String Correo = sc.nextLine();
         System.out.println("Digite la empresa de trabajo: ");
-        String empresaEmpleado = sc.next();
+        String empresaEmpleado = sc.nextLine();
         System.out.println("Digite cargo que desempeña el empleado: ");
-        String cargo = sc.next();
+        String cargo = sc.nextLine();
         Empleado empleado1 = new Empleado(nombreEmpleado, Correo, empresaEmpleado, cargo,nombreEmpresa, direccion, telefono, nit) ;
         System.out.println("El empleado numero 1 es: " + empleado1.getNombreEmpleado());
         System.out.println("El correo del empleado numero 1 es: " + empleado1.getCorreo());
@@ -47,7 +47,7 @@ public class main {
         //MOVIMIENTO DE DINERO
         System.out.println("Digite el monto del movimiento (Numeros): ");
         double montoMovimiento = sc.nextDouble();
-        System.out.println("Digite el tipo de movimiento: ");
+        System.out.println("Digite el tipo de movimiento:");
         String tipoDeMoviento = sc.next();
         System.out.println("Digite el usuario: ");
         String usuario = sc.next();
@@ -55,6 +55,5 @@ public class main {
         System.out.println("El movimiento numero 1 es: " + mdd1.getMontoMovimiento());
         System.out.println("El tipo de movimiento numero 1 es: " + mdd1.getTipoDeMoviento());
         System.out.println("El usuario del movimiento numero 1 es: " + mdd1.getUsuario());
-        
     }
 }

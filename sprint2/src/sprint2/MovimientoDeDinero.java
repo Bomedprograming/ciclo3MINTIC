@@ -13,10 +13,9 @@ public class MovimientoDeDinero extends Empresa {
     private String tipoDeMoviento;
     private String usuario;
 
-    public MovimientoDeDinero(double montoMovimiento, String tipoDeMoviento, String usuario, String nombreEmpresa, String direccion, int telefono, int nit) {
+    public MovimientoDeDinero(double montoMovimiento, String tipoDeMoviento, String usuario, String nombreEmpresa, String direccion, String telefono, String nit) {
         super(nombreEmpresa, direccion, telefono, nit);
         this.montoMovimiento = montoMovimiento;
-
         this.tipoDeMoviento = tipoDeMoviento;
         this.usuario = usuario;
     }
