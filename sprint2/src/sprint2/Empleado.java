@@ -15,7 +15,7 @@ public class Empleado extends Empresa {
     private String empresaEmpleado;
     private String cargo;
 
-    public Empleado(String nombreEmpleado, String Correo, String empresaEmpleado, String cargo, String nombreEmpresa, String direccion, int telefono, int nit) {
+    public Empleado(String nombreEmpleado, String Correo, String empresaEmpleado, String cargo, String nombreEmpresa, String direccion, String telefono, String nit) {
         super(nombreEmpresa, direccion, telefono, nit);
         this.nombreEmpleado = nombreEmpleado;
         this.Correo = Correo;

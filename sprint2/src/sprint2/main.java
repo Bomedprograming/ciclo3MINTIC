@@ -15,13 +15,13 @@ public class main {
         
         //EMPRESA
         System.out.println("Digite el nombre de la empresa: ");
-        String nombreEmpresa = sc.next();
+        String nombreEmpresa = sc.nextLine();
         System.out.println("Digite dirección de la empresa: ");
-        String direccion = sc.next();
+        String direccion = sc.nextLine();
         System.out.println("Digite el teléfono de la empresa: ");
-        int telefono = sc.nextInt();
+        String telefono = sc.nextLine();
         System.out.println("Digite el NIT de la empresa: ");
-        int nit = sc.nextInt();
+        String nit = sc.nextLine();
         Empresa empresa1 = new Empresa(nombreEmpresa, direccion, telefono, nit) ;
         System.out.println("La empresa numero 1 es: " + empresa1.getNombreEmpresa());
         System.out.println("La dirección de la empresa numero 1 es: " + empresa1.getDireccion());
