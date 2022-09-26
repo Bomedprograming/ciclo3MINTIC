@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.ReflectionUtils;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 
@@ -21,7 +22,7 @@ public class IServiceTransaction {
         this.repository =repository;
         this.iServiceEnterprise =iServiceEnterprise;
     }
-    public ArrayList<Transaction> listTransaction(Long id){
+    public List<Transaction> listTransaction(Long id){
         Enterprise emp = this.iServiceEnterprise.searchEnterprise(id).get();
         return emp.getTransactions();
     }

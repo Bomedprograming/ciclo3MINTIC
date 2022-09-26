@@ -3,6 +3,8 @@ package com.bomed.sprint3.entity;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+
 
 @Entity
 @Table(name = "Enterprise")
@@ -19,11 +21,12 @@ public class Enterprise {
     private String address;
 
 
-    @OneToMany(mappedBy = "enterprise", fetch = FetchType.LAZY)
-    private ArrayList<Employee> users;
+    @OneToMany (mappedBy = "enterprise", fetch = FetchType.LAZY)
+    private List<Employee> users;
+
 
     @OneToMany(mappedBy = "enterprise")
-    private ArrayList<Transaction> transactions;
+    private List<Transaction> transactions;
 
     private Date createdAt;
     private Date updatedAt;
@@ -33,7 +36,7 @@ public class Enterprise {
     public Enterprise() {
     }
 
-    public Enterprise(Long id, String name, String document, String phone, String address, ArrayList<Employee> users, ArrayList<Transaction> transactions, Date createdAt, Date updatedAt) {
+    public Enterprise(Long id, String name, String document, String phone, String address, List<Employee> users, List<Transaction> transactions, Date createdAt, Date updatedAt) {
         this.id = id;
         this.name = name;
         this.document = document;
@@ -87,19 +90,19 @@ public class Enterprise {
         this.address = address;
     }
 
-    public ArrayList<Employee> getUsers() {
+    public List<Employee> getUsers() {
         return users;
     }
 
-    public void setUsers(ArrayList<Employee> users) {
+    public void setUsers(List<Employee> users) {
         this.users = users;
     }
 
-    public ArrayList<Transaction> getTransactions() {
+    public List<Transaction> getTransactions() {
         return transactions;
     }
 
-    public void setTransactions(ArrayList<Transaction> transactions) {
+    public void setTransactions(List<Transaction> transactions) {
         this.transactions = transactions;
     }
 

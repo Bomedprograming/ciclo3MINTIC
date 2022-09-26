@@ -1,6 +1,5 @@
 package com.bomed.sprint3.entity;
 
-import org.apache.catalina.User;
 
 import javax.persistence.*;
 import java.util.Date;
