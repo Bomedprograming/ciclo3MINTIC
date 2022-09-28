@@ -1,6 +1,8 @@
 package com.bomed.sprint3.controller;
 
 import com.bomed.sprint3.entity.Profile;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -8,9 +10,10 @@ import java.util.Optional;
 
 @RestController
 public class ProfileController {
-    private ProfileController services;
+    private final ProfileController services;
 
-    public ProfileController(ProfileController services) {
+    @Autowired
+    public ProfileController(@Lazy ProfileController services) {
         this.services = services;
     }
 
