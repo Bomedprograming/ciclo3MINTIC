@@ -1,4 +1,4 @@
-package frontControllers;
+package com.bomed.sprint4.contoller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
